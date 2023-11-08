@@ -1,0 +1,6 @@
+import socket 
+c =socket.socket()
+print("Rishi Deore")
+c.connect(('localhost',9999)) 
+c.send(bytes('send something from client using socket with same port','utf-8'))
+print(c.recv(1024).decode())

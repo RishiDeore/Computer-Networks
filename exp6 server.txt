@@ -1,0 +1,13 @@
+import socket 
+server=socket.socket() 
+print("Rishi Deore" )
+print("Successfully connected")
+server.bind(('localhost',9999)) 
+server.listen(3)
+print('waiting for connections') 
+while True:
+    c.addr=server.accept() 
+    print("connected with ",addr)
+    c.send(bytes('Rishi Deore Successfully connected to server using socket','utf-8'))
+    print(c.recv(1025))
+    c.close()
