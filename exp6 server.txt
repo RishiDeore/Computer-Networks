@@ -1,6 +1,6 @@
 import socket 
 server=socket.socket() 
-print("Rishi Deore" )
+print("Cisco" )
 print("Successfully connected")
 server.bind(('localhost',9999)) 
 server.listen(3)
